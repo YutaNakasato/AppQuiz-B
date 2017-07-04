@@ -69,7 +69,23 @@ public class AppQuiz {
 		return 1;
 	}
 	public static int toi4(){
-		//ヒロキ
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1円から１０円のお酒があります。その中で酔えないお酒があります。何円でしょう。");
+		System.out.print("回答:");
+		int ss,sss;
+		for(;;){
+			ss = sc.nextInt();
+			if(ss == 1 || ss == 2 || ss == 3||ss == 4 || ss == 5 || ss == 6||ss == 7 || ss == 8 || ss == 9||ss == 10){
+				break;
+			}
+		}
+		if(ss == 4){
+			System.out.println("正解です");
+			sss = 1;
+		}else{
+			System.out.println("不正解です");
+			sss =0;
+		}
 		return 1;
 	}
 	public static int toi5(){
