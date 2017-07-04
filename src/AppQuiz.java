@@ -8,7 +8,21 @@ public class AppQuiz {
 		int f = toi6();
 	}
 	public static int toi1(){
-		//裕	耶担当
+		System.out.println("ハゲはハゲでも食べられないハゲは？");
+		System.out.print("1: 大地 2: 大地 3: 大地");
+		int i = sc.nextInt();
+		do{
+			if(i == 1){
+				System.out.print("正解！");
+			}else if(i ==2){
+				System.out.print("正解！");
+			}else if(i == 3){
+				System.out.print("正解！");
+			}else{
+				System.out.print("１，２，３のどれかの大地を入力してください。");
+				int i = sc.nextInt();
+			}
+		}while(i == 1 || i ==2 || i== 3);
 	}
 	public static int toi2(){
 		//中里
