@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 public class AppQuiz {
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class AppQuiz {
 		//中里
 	}
 	public static int toi3(){
-		//佐藤PDT大地@ダイブレッドマン
+		//佐藤PDT大地@ダイブレッドマン 
 	}
 	public static int toi4(){
 		//ヒロキ
