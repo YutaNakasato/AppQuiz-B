@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class AppQuiz {
 	public static void main(String[] args) {
+
 		int a = toi1();
 		int b = toi2();
 		int c = toi3();
@@ -21,8 +24,41 @@ public class AppQuiz {
 	}
 	public static int toi5(){
 		//マルチャン
+		Scanner sc = new Scanner(System.in);
+		System.out.println("一度あなに入ると、なかなか出てこない「虫」って何？：");
+		System.out.println("1:でんでんむし、２：かぶとむし、３：くわがたむし");
+		System.out.print("数字で答えてください：");
+		int z = sc.nextInt();
+		switch ( z ){
+		case 1 : System.out.println("でんでんむしが選択されました");
+				break ;
+		case 2 : System.out.println("かぶとむしが選択されました");
+				break ;
+
+		case 3 : System.out.println("くわがたむしが選択されました");
+				break ;
+
+		default : System.out.println("1～３の数字を選択してください");
+				toi5();
+		}
+		 return z ;
 	}
 	public static int toi6(){
 		//カサイクン
+		Scanner sc = new Scanner(System.in);
+		System.out.println("入口１つ、出口３つってなんだ：");
+		System.out.println("1：服、２：ズボン");
+		System.out.print("数字で答えてください：");
+		int z = sc.nextInt();
+		switch ( z ){
+		case 1 : System.out.println("服が選択されました");
+				break ;
+		case 2 : System.out.println("ズボンが選択されました");
+				break ;
+
+		default : System.out.println("1～３の数字を選択してください");
+				toi6();
+		}
+		 return z ;
 	}
 }
